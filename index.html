@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid - 19 Landing Page Web Ui</title>
+    <!-- font awesome icons file CDN link -->
+    <script src="https://kit.fontawesome.com/fc5f91ff43.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</head>
+    <script src="script.js"></script>
+<body>
+    <section>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="img/heart-rate.png" alt="logo">
+                    <span>iVaccine</span>
+                </div>
+                <div class="links">
+                    <a href="index.html" class="nav-btn active">Beranda</a>
+                    <a href="datacovid.html" class="nav-btn">Tentang</a>
+                    <a href="#" class="nav-btn">Data Covid</a>
+                    <a href="#" class="nav-btn">Contact</a>
+                </div>
+            </div>
+
+            <div class="main">
+                <div class="content">
+                    <span>Sudahkah anda vaksinasi?</span>
+                    <p class="heading">iVaccine</p>
+                    <p class="para">Lindungi diri dan sekitar dengan berpartisipasi dalam program Vaksinasi COVID-19.</p>
+                    <button>Vaksin Sekarang!</button>
+                </div>
+                <div class="img-main">
+                    <img src="img/health.jpg" class="img-fluid" alt="main_img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+
+
+    <script>
+        const nav_btns = document.querySelectorAll('.nav-btn');
+        nav_btns.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                nav_btns.forEach((button) => button.classList.remove('active'));
+                btn.classList.add('active');
+            })
+        })
+    </script>
+</body>
+</html>
